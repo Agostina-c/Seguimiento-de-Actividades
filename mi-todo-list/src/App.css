@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(5px);
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: white;
+  color: #333;
+}
+
+.todo-container-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 350px;
+  flex: 0 1 350px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.todo {
+  background: white;
+  color: #333;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item {
+  color: #d63384; 
+  font-weight: bold;
+  list-style-type: none; 
+}
+
+.todo.completed .todo-item {
+  color: #198754;
+  text-decoration: line-through;
+}
+
+.select-container {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-todo {
+  border: none;
+  background: transparent;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: #333;
+}
+.todo-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
